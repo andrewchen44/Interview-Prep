@@ -1,8 +1,8 @@
-// Write a function to determine the number of bits you would need to flip to convert integer A to integer B
+// Write a function to determine the number of bits you would need to flip to convert integer num1 to integer num2
 
-const converter = function(a, b) {
+const converter = function(num1, num2) {
     let count = 0;
-    for(let c = a ^ b; c != 0; c = c & (c - 1)) {
+    for(let difference = num1 ^ num2; difference != 0; difference = difference & (difference - 1)) {
         count ++;
     }
     return count;
