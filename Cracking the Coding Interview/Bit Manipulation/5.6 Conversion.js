@@ -7,3 +7,6 @@ const converter = function(num1, num2) {
     }
     return count;
 }
+
+// Find the differences
+// Keep subtracting one until it is 0
