@@ -20,5 +20,5 @@ const depthFirstSearch = function(node, targetVal) {
         rightSide = depthFirstSearch(node.right, targetVal);
     }
 
-    return target;
+    return leftSide || rightSide;
 }
