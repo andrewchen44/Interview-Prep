@@ -16,3 +16,5 @@ const fibonacci = function(n) {
     }
     return calculate(n);
 }
+
+// Recurse down to the bottom and add all values to an array so that there is no nede to recalculate after calculating a value once

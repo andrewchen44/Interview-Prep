@@ -16,3 +16,5 @@ const fibonacci = function(n){
 
     return memo[n - 1]
 }
+
+// calculate all the numbers and add them to an array, then simply return the number array position n - 1
