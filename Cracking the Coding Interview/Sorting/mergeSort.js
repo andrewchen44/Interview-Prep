@@ -4,9 +4,9 @@ const mergeSort = function(arr) {
   if(arr.length === 1) {
     return arr;
   }
-  let mid = arr.length/2
-  let left = arr.slice(0, mid)
-  let right = arr.slice(mid, arr.length - 1);
+  let mid = Math.floor(arr.length/2);
+  let left = arr.slice(0, mid); 
+  let right = arr.slice(mid);
 
   return mergeHalves(mergeSort(left), mergeSort(right));
 }
@@ -25,7 +25,7 @@ const mergeHalves = function(left, right) {
     sorted.push(left.shift());
   }
   while(right.length) {
-    sort.push(right.shift());
+    sorted.push(right.shift());
   }
   return sorted;
 }
