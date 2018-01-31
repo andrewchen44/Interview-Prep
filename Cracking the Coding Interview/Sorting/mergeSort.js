@@ -1,19 +1,31 @@
 // Implement merge sort
 
+const mergeSort = function(arr) {
+  if(arr.length === 1) {
+    return arr;
+  }
+  let mid = arr.length/2
+  let left = arr.slice(0, mid)
+  let right = arr.slice(mid, arr.length - 1);
 
+  return mergeHalves(mergeSort(left), mergeSort(right));
+}
 
-// merge sort function takes in array
-  // if array is null
-    // return
+const mergeHalves = function(left, right) {
+  let sorted = [];
+  while(left.length && right.length) {
+    if(left[0] < right[0]) {
+      sorted.push(left.shift());
+    } else{
+      sorted.push(right.shift());
+    }
+  }
 
-  // set left half to variable
-  // set right half to variable
-  
-  // call merge sort to left half
-  // call merge sort to right half
-
-  //call merge halves
-
-
-
-// merge halves function
+  while(left.length){
+    sorted.push(left.shift());
+  }
+  while(right.length) {
+    sort.push(right.shift());
+  }
+  return sorted;
+}
