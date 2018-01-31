@@ -7,7 +7,6 @@ const mergeSort = function(arr) {
   let mid = Math.floor(arr.length/2);
   let left = arr.slice(0, mid); 
   let right = arr.slice(mid);
-
   return mergeHalves(mergeSort(left), mergeSort(right));
 }
 
@@ -20,7 +19,6 @@ const mergeHalves = function(left, right) {
       sorted.push(right.shift());
     }
   }
-
   while(left.length){
     sorted.push(left.shift());
   }
