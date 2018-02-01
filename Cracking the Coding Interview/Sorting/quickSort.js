@@ -5,7 +5,6 @@ const quickSort = function(array, left, right){
     left = 0;
     right = array.length - 1;
   }
-  // debugger;
   if(left < right) {
     
     let partitionIndex = partition(array, left, right);
