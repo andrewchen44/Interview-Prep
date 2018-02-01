@@ -29,5 +29,3 @@ const insertCharAt = function(word, char, position) {
     let end = word.slice(position);
     return beggining + char + end; 
 }
-
-console.log(stringPermutations('cat'));
