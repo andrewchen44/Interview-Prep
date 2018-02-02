@@ -19,7 +19,7 @@ const partition = function(array, left, right) {
   let pivotValue = array[Math.floor((right + left) / 2)];
   let l = left;
   let r = right;
-  // goes through array and swaps values if larger than pivot
+  // goes through array and swaps values if larger than pivot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             `1
   while(l <= r) {
     while(array[l] < pivotValue){
       l++;
