@@ -18,3 +18,5 @@ var isSymmetric = function(root) {
     return isMatch(root, root);
     
 };
+
+// The worst case time complexity is O(2n) where n is the number of nodes in the tree as you need to 
