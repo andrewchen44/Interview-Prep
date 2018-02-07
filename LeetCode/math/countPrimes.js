@@ -25,3 +25,5 @@ var countPrimes = function(n) {
     }
     return results.length;
 };
+
+// Has a time complexity of O(n) where n is the number as you initialize the array O(n), delete all the primes O(logn), and push all the results O(n)
