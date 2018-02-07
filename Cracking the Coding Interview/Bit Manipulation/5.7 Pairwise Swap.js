@@ -6,3 +6,4 @@ const swapOddEvenBits = function (num) {
 
 // 0xA: pattern that creates 10101010 to get odd bits
 // 0x5: pattern that creates 01010101 to get even bits
+// 0x5: pattern that creates 01010101 to get even bits
