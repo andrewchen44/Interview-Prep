@@ -10,7 +10,6 @@ var firstUniqChar = function(s) {
             storage[character][0]++
         }
     }
-    
     let letters = Object.keys(storage);
     for(let i = 0; i < letters.length; i++) {
         let character = storage[letters[i]];
@@ -19,7 +18,6 @@ var firstUniqChar = function(s) {
         }
     }
     return -1;
-    
 };
 
 // go through string and store the index the first time it occurs and increase the count every other time. Then go through all the stored values and see which one has a count of 1 first and return the index. The worst case run time is O(n + n) or just O(n), where n is the number of characters in the string s, because the function iterates through the the whole string once and then iterates through all values in storage as well. Space complexity of O(n) as we are creating a storage object for all characters.
