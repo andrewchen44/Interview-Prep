@@ -5,6 +5,7 @@ const getSum = function(amount) {
   const denoms = [25, 10, 5, 1];
 
   const calculate = function(amount, index) {
+    debugger;
     if(index >= denoms.length - 1) {
       ways++;
       return;
