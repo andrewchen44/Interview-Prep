@@ -41,3 +41,8 @@ const editDistance = function(string1, string2) {
   }
   return dp[l1][l2]; // return the last value as that is the minimum for both full strings
 }
+
+// n: length of string 1
+// m: length of string 2
+// Time Complexity: O(m*n + m + n + m*n) = O (2*m*n + m + n) + O(mn), need to initialize array, intialize first column, initialize first row, calculate all the values in the 2d array
+// Space Compelxity: O(m*n) as we need to store a minimum distance for very length of each string
