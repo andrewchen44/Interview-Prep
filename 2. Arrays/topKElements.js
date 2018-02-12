@@ -45,3 +45,8 @@ var topKFrequent = function(nums, k) {
   }
   return results;
 };
+
+// n: number of integers in nums
+// k: amount of desired top elements
+// Time complexity: O(n + n + log n) as we have to iterage through the array to get their counts, iterage through the hash table to populate bucket storage, and then populate results array
+// Space complexity: O(log n + n + k) as we need to store the counts of recurrance O(log n) + buckets of each count O(n) + the top k values in an array O(k)
