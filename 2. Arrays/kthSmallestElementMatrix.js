@@ -13,7 +13,6 @@ var kthSmallest = function(matrix, k) {
   allValues.sort(function(a, b) {
     return a - b;
   });
-  console.log(allValues);
   return allValues[k - 1];
 };
 
