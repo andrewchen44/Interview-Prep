@@ -37,8 +37,6 @@ function largestValuesInTreeRows(t) {
         if(i + 1 === nodes.length) {
             results.push(largest);
         }
-        
     }
-    
     return results;
 }

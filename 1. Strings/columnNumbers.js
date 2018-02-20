@@ -17,8 +17,7 @@ var titleToNumber = function(s) {
   for (let i = 0; i < s.length; i++) {
     let base = "A";
     let currentCharacter = s[i];
-    results =
-      results * 26 + (currentCharacter.charCodeAt() - base.charCodeAt() + 1);
+    results = results * 26 + (currentCharacter.charCodeAt() - base.charCodeAt() + 1);
   }
   return results;
 };

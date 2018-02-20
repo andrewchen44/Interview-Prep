@@ -6,7 +6,6 @@ var isHappy = function(n) {
     let occuredValues = {};
     
     const sum = function(digits) {
-        console.log(digits)
         let total = 0;
         for(let i = 0; i < digits.length; i++) {
             total += Math.pow(parseInt(digits[i]), 2)
@@ -20,7 +19,7 @@ var isHappy = function(n) {
         }
         return sum(total.toString().split(''))
     }
-    
     return sum(n.toString().split(''))
-    
 };
+
+// use a hash table to keep track of already occured numbers, if it occurs twice it is a loop and return false

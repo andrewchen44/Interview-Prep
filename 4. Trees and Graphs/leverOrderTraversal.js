@@ -1,4 +1,4 @@
-// Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+// Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level). aka breadth first traversal
 
 var levelOrder = function(root) {
     if(root === null) {

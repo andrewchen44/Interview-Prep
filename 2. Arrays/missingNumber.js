@@ -11,7 +11,6 @@ var missingNumber = function(nums) {
             return i;
         }
     }
-    
 };
 
 // add all the numbers to a object and check to see which one is not found. Time complexity of O(2n) or O(n) where n is the number of distinct numbers in nums and a space complexity of O(n) as well.
