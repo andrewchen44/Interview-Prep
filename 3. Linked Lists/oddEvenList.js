@@ -28,7 +28,7 @@ var oddEvenList = function(head) {
     return head
 };
 
-// Have to pointers and go through the linked list. Set the next of the odd's tail to the next of the even tail then set the next of the even tail to the next of the odd tail. The move both pointers to their respective next nodes. Keep doing this while the even tail isn't null and the even tail's next isn't null.
+// Have two pointers and go through the linked list. Set the next of the odd's tail to the next of the even tail then set the next of the even tail to the next of the odd tail. The move both pointers to their respective next nodes. Keep doing this while the even tail isn't null and the even tail's next isn't null.
 
 //n: number of nodes in the linked list
 // Time complexity: O(n) as we only go through the linked list once

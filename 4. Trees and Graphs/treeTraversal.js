@@ -17,10 +17,7 @@ function traverseTree(t) {
         if(node.right) {
             queue.push(node.right)
         }
-        
     }
-    
     return results;
-
 }
 

@@ -4,13 +4,13 @@ const Node = function(value) {
     this.right = null;
 }
 
-const bradthFirstSearch = function(root, targetVal) {
+const breadthFirstSearch = function(root, targetVal) {
     let queue = [root];
     let result = null;
 
     while(queue.length > 0) {
         let node = queue.shift();
-        if(node.value === taretVal) {
+        if(node.value === targetVal) {
             result = node;
         }
         if(node.left) {

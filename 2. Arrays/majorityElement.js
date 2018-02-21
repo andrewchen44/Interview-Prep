@@ -11,7 +11,6 @@ var majorityElement = function(nums) {
     }
     let countStorage = {};
     let majority = Math.floor(((nums.length - 1) / 2)) + 1;
-    
     for(let i = 0; i < nums.length; i++) { // Go through the nums array and add the count to the hashmap
         let currentNum = nums[i];
         if(countStorage[currentNum]) {
@@ -23,7 +22,6 @@ var majorityElement = function(nums) {
             countStorage[currentNum] = 1;
         }
     }
-    
 };
 
 // n: number of values in the nums array

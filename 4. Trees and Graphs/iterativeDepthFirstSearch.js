@@ -7,7 +7,6 @@ const Node = function(value) {
 const iterativeDepthFirstSearch = function(root, targetVal) {
     let stack = [root];
     let result = null;
-
     while(stack.length > 0) {
         let node = stack.pop();
         if(node.value === targetval) {

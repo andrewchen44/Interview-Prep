@@ -13,7 +13,6 @@ var isPalindrome = function(s) {
     if(s === "") {
         return true;
     }
-    
     let sArray = s.split('');
     let characters = [];
     // go through characters and push only alpha numeric to characters arrays
