@@ -15,7 +15,6 @@ const binarySearch = function (arr, value) {
             return mid;
         }
     }
-
     return -1
 }
 
