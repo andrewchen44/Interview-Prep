@@ -13,3 +13,6 @@ function amendTheSentence(s) {
     return sentence;
 }
 
+// n: Number of characters in the sentence
+// Time Complexity: O(n) as we only iterate through the array once
+// Space Complexity: O(n log n) as we using additional space to store the new sentence.

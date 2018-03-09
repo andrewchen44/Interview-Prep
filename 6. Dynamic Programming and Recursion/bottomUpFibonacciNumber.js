@@ -11,7 +11,7 @@ const fibonacci = function(n){
             memo[i] = memo[i - 2] + memo[i - 1];
         }
     }
-    return memo[n - 1]
+    return memo[n - 1];
 }
 
 // calculate all the numbers and add them to an array, then simply return the number array position n - 1
