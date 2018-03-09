@@ -14,7 +14,6 @@ function Center() {
             return new Director(name, position);
         }
     }
-    
 }
 
 function Employee(name) {
@@ -22,7 +21,6 @@ function Employee(name) {
     this.receiveCall = function () {};
     this.escalateCall = function() {};
     this.endCall = function() {};
-
 };
 
 function Respondent(name, position) {
