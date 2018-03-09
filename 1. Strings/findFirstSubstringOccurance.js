@@ -8,3 +8,8 @@ function findFirstSubstringOccurrence(s, x) {
   }
   return -1;
 }
+
+
+// n: the number of characters in s
+// Time Complexity: O(n) as we iterate through the whole array worst case
+// Space Complexity: O(1) as we are not using any additional space
