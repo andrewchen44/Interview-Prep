@@ -1,0 +1,5 @@
+Graphs
+
+BackTracking Situations
+-find all permutations 
+    -remember to undo changes with arrays and objects
