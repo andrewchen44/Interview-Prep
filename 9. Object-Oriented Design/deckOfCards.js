@@ -12,8 +12,6 @@ const Deck = function() {
     this.takeFromTop = function() {
         return this.cards.pop;
     };
-
-
 };
 
 const Card = function(suit, value) {
