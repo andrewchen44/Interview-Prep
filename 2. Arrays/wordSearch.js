@@ -11,7 +11,7 @@ var exist = function(board, word) {
   let explored = {};
 
   const explore = function(row, col, currentString) {
-    if (
+    if ( // if the cell is out of bounds or has already been explored, return false;
       row < 0 ||
       row > rows - 1 ||
       col < 0 ||
@@ -22,27 +22,27 @@ var exist = function(board, word) {
     }
     let newString = currentString + board[row][col];
     let m = newString.length;
-    if (newString[m - 1] !== word[m - 1]) {
+    if (newString[m - 1] !== word[m - 1]) { // if the character to be checked doesn't match the character in word at position return false;
       return false;
     }
-    if (newString === word) {
+    if (newString === word) { // if the word matches return true;
       return true;
     }
-    explored[[row, col]] = true;
+    explored[[row, col]] = true; // mark the explored cell as true
 
     if (
-      explore(row + 1, col, newString) ||
+      explore(row + 1, col, newString) || // explore all other possible cells around it
       explore(row, col + 1, newString) ||
       explore(row - 1, col, newString) ||
       explore(row, col - 1, newString)
     ) {
       return true;
     }
-    explored[[row, col]] = false;
+    explored[[row, col]] = false; // reset this cells exploration if path does not find solution
   };
 
   for (let i = 0; i < rows; i++) {
-    for (let j = 0; j < cols; j++) {
+    for (let j = 0; j < cols; j++) { // go through board and 
       let currentChar = board[i][j];
       if (currentChar === word[0] && explore(i, j, "")) {
         return true;
