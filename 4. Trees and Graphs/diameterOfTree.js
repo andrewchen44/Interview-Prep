@@ -15,7 +15,7 @@ var diameterOfBinaryTree = function(root) {
     return max;
 };
 
-// Idea: at each node, calculate the max diameter, which is the depth of left and right + 1 and compare it to the curernt max. 
+// Idea: at each node, calculate the max diameter, which is the depth of left and right and compare it to the curernt max. 
 // n: The number of nodes in the tree
 // Time Complexity: O(n) as we are only touching each node once
 // Space Complexity: O(1) as we are not using any additional space
