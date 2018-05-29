@@ -6,7 +6,6 @@
 
 var merge = function(intervals) {
     let sortedInts = intervals.sort(function(a, b) { return a.start - b.start; })
-    console.log(sortedInts)
     let merged = [sortedInts[0]];
     for(let i = 1; i < sortedInts.length; i++) {
         let currentInt = sortedInts[i];

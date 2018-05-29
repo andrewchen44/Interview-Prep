@@ -1,4 +1,4 @@
-const lowestCostNode = (costs processed) => {
+const lowestCostNode = (costs, processed) => {
     return Object.keys(costs).reduce((lowest, node) => {
         if(lowest === null || costs[node] < costs[lowest]) {
             if(!processed.includes(node)) {

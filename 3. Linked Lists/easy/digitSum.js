@@ -1,4 +1,4 @@
-// Find the sum of all the digits of a binar tree if a number is from root to leaf
+// Find the sum of all the digits of a binary tree if a number is from root to leaf
 
 function digitTreeSum(t) {
     let total = 0;
