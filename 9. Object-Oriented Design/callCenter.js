@@ -16,6 +16,20 @@ function Center() {
     }
 }
 
+class Center{
+    constructor(){
+        this.hireEmployee = (name, position) {
+            if(type === 'respondent') {
+                return new Respondent(name, position);
+            } else if(type === 'manager') {
+                return new Manager(name, position);
+            } else if(type === 'director') {
+                return new Director(name, position);
+            }
+        }
+    }
+}
+
 function Employee(name) {
     this.name = name;
     this.receiveCall = function () {};
