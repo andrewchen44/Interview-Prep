@@ -1,3 +1,5 @@
+const expect = require('../../expect')
+
 // Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 // The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
@@ -29,6 +31,12 @@ var isValid = function(s) {
   }
   return true;
 };
+
+expect(isValid('{}{}[]'), true)
+expect(isValid('{[]}'), true)
+expect(isValid('{}{[]'), false)
+expect(isValid('({}{}[])'), true)
+
 
 // n: The number of characters in the string
 // Time Complexity: O(n) as we only iterate through the string once
