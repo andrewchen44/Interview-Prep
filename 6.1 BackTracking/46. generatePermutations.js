@@ -4,6 +4,25 @@
 // [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
 var permute = function(nums) {
+    const perms = [];
+    
+    const generate = (ints, perm) => {
+        if(!ints.length) { perms.push(perm)}
+        
+        for(let i = 0; i < ints.length; i++) {
+            const newInts = ints.slice();
+            const newPerm = perm.slice();
+            newPerm.push(newInts.splice(i, 1));
+            generate(newInts, newPerm)
+            
+        }
+    } 
+    generate(nums, []); 
+
+    return perms;
+};
+
+var permute = function(nums) {
     let permutations = [];
     
     if(nums.length < 2) { // if there is only 1 value left in the array, return that in an array as there are no other permutations

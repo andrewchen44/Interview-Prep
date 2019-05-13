@@ -5,6 +5,25 @@
 // How many possible unique paths are there?
 
 var uniquePaths = function(m, n) {
+  let count = 0;
+
+  const travel = (r, c) => {
+      if (r > m || c > n) return;
+      
+      if (r === m && c === n) {
+          count++;
+      } else {
+        travel(r + 1, c);
+        travel(r, c + 1);  
+      }
+  }   
+  
+  travel(1,1)
+  
+  return count;
+};
+
+var uniquePaths = function(m, n) {
   let grid = [];
 
   // initialize grid
